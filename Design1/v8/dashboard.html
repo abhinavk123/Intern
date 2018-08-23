@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/pure-drawer.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="navbar-nav  mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Logo Space
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active" style="margin-right: 20px">
+                    <a class="nav-link" href="#"><img class="img-th"
+                                                      src="http://cdn.onlinewebfonts.com/svg/img_158445.png"></a>
+                </li>
+                <li class="nav-item active" style="margin-right: 20px">
+                    <a class="nav-link" href="#"><img class="img-th"
+                                                      src="https://png.icons8.com/ios/1600/user-male-circle-filled.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="pure-container" data-effect="pure-effect-slide">
+    <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
+    <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
+        <span class="pure-toggle-icon"></span>
+    </label>
+
+    <div class="pure-drawer" data-position="left">
+        <h4 id="contentHead">Contents</h4>
+        <hr style="border-color: white;margin-left: 10px;margin-right: 10px">
+        <h5>Physics</h5>
+        <ol>
+            <li>Electric Field</li>
+            <li>Electric Field Lines
+                <ol>
+                    <li>Electric Flux
+                        <ol>
+                            <li>Electric Field</li>
+                        </ol>
+                    </li>
+
+                </ol>
+            </li>
+
+        </ol>
+    </div>
+
+    <div class="pure-pusher-container">
+        <div class="pure-pusher">
+            <div class="container" id="mainContent">
+                <div id="dashWin" class="col-sm-9 ">
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link active nv-item" id="notes-tab" data-toggle="tab" href="#notes" role="tab"
+                               aria-controls="home" aria-selected="true">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nv-item" id="content-tab" data-toggle="tab" href="#content" role="tab"
+                               aria-controls="profile" aria-selected="false">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nv-item" id="vbq-tab" data-toggle="tab" href="#vbq" role="tab"
+                               aria-controls="contact"
+                               aria-selected="false">VBQ</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nv-item" id="ncert-tab" data-toggle="tab" href="#ncert" role="tab"
+                               aria-controls="contact" aria-selected="false">NCERT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nv-item" id="extra-tab" data-toggle="tab" href="#extra" role="tab"
+                               aria-controls="contact" aria-selected="false">Extra</a>
+                        </li>
+                    </ul>
+
+                    <div style="margin: 5px 0 5px 0">
+                    <ul id="listnav" class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Grade 12</a></li>
+                        <li class="breadcrumb-item"><a href="#">Science</a></li>
+                        <li class="breadcrumb-item"><a href="#">Physics</a></li>
+                        <li class="breadcrumb-item active">Electric Field</li>
+                    </ul>
+                        <a class="btn btn-primary ripple" id="subChpBtn">Add Subchapter</a>
+                        </div>
+
+
+
+
+                    <hr id="dashWinline">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+                            <div class="container" id="subchapter">
+
+                                <div class="upbtndiv"><h5 class="subchphead">1. Electric Field Lines</h5>
+                                    <button id="upBtn1" class=" upBtn" onclick="hideCont1()"><i
+                                            class="fa fa-caret-square-o-up"
+                                            style="font-size:24px"></i>
+                                    </button>
+                                </div>
+                                <div class="para" id="subchapterCont">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur
+                                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                        anim id
+                                        est laborum.</p>
+
+                                    <hr>
+                                    <div id="subHeading" class="container">
+                                        <div class="upbtndiv"><h6 class="subhead">1.1. Electric Flux</h6>
+                                            <button id="upBtn2" class=" upBtn subheadupbtn" onclick="hideCont2()"><i
+                                                    class="fa fa-caret-square-o-up" style="font-size:24px"></i></i>
+                                            </button>
+                                        </div>
+                                        <div id="subHeadingCont">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                                dolor
+                                                in
+                                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur.
+                                                Excepteur
+                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit
+                                                anim
+                                                id
+                                                est laborum.</p>
+
+                                            <div id="subsubHeading" class="container">
+                                                <div class="upbtndiv"><h6 class="subhead">1.1.1. Electric Field</h6>
+                                                    <button id="upBtn3" class=" upBtn subheadupbtn"
+                                                            onclick="hideCont3()"><i
+                                                            class="fa fa-caret-square-o-up" style="font-size:24px"></i>
+                                                    </button>
+                                                </div>
+                                                <div id="subsubHeadingCont">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam,
+                                                        quis nostrud
+                                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                        consequat.
+                                                        Duis aute
+                                                        irure dolor in reprehenderit in voluptate velit esse cillum
+                                                        dolore eu
+                                                        fugiat nulla
+                                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                                                        in culpa
+                                                        qui officia
+                                                        deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="content" role="tabpanel" aria-labelledby="content-tab">Under
+                            Construction
+                        </div>
+                        <div class="tab-pane fade" id="vbq" role="tabpanel" aria-labelledby="vbq-tab">Under
+                            Construction
+                        </div>
+                        <div class="tab-pane fade" id="mcq" role="tabpanel" aria-labelledby="mcq-tab">Under
+                            Construction
+                        </div>
+                        <div class="tab-pane fade" id="ncert" role="tabpanel" aria-labelledby="ncert-tab">Under
+                            Construction
+                        </div>
+                        <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">Under
+                            Construction
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label>
+</div>
+
+
+</body>
+</html>

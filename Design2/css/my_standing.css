@@ -1,0 +1,309 @@
+.progressBar {
+
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.progressBar .container {
+    background: gray;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#currentCont {
+    border: 1px solid gray;
+    padding: 10px 10px 10px 10px;
+    margin: 30px 0 30px 0;
+    width: 102%;
+    position: relative;
+    left: -12px;
+}
+
+.skill {
+    height: 12px;
+}
+
+.overall {
+    background: #00CC00;
+    width: 10%;
+}
+
+/*
+.overall:after{
+    content: '10%';
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    top:-40px;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    line-height: 30px;
+    width: 40px;
+}
+*/
+.overall span {
+    color: #00CC00;
+    font-weight: bold;
+}
+
+.current {
+    background: #CC0000;
+    width: 47%;
+    height: 15px;
+}
+
+/*
+.current:after{
+    content: '47%';
+    display: block;
+    position: absolute;
+    top:-40px;
+    margin-left: 40%;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    line-height: 30px;
+    width: 40px;
+}
+*/
+.current span {
+    color: #CC0000;
+    font-weight: bold;
+
+}
+
+.science {
+    background-color: #6699FF;
+    width: 87%;
+}
+
+/*
+.science:after{
+    content: '87%';
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    top:-40px;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    line-height: 30px;
+    width: 40px;
+}
+*/
+.science span {
+    color: #6699FF;
+    font-weight: bold;
+}
+
+#currentCont div.container {
+
+}
+
+#currentCont {
+
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mainContent {
+    max-width: 100%;
+}
+
+#groupMainContent {
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.percent {
+    text-align: center;
+    color: white !important;
+    font-weight: unset !important;
+    background-color: rgba(0,160,215,0.7);
+    border-radius: 5px;
+    line-height: 30px;
+    width: 40px;
+    height: 30px;
+    display: block;
+    float: right;
+    position: relative;
+
+}
+
+.percent:after{
+    content: ' ';
+    display: block;
+    height: 12px;
+    width: 10px;
+    border-top: 12px solid rgba(0,160,215,0.7);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: relative;
+    left:9px;
+}
+
+.current .percent, .overall .percent {
+    right: -20px;
+    top: -44px;
+}
+
+.science .percent {
+    right: -20px;
+    top: -45px;
+}
+
+.name {
+    position: relative;
+    left: -79px;
+    top: -5px;
+}
+
+.mainContent hr {
+    width: 100%;
+    margin: auto;
+    max-width: 95%;
+    margin-top: 25px;
+    border: 1px solid #b1b1b1;
+    background: #b1b1b1;
+}
+
+.mainContent h5:not(#journeymaphead) {
+    text-align: center;
+    width: 100%;
+    max-width: 160px;
+    margin: auto;
+    margin-top: 25px;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+}
+
+.journeyCont{
+    width:80%;
+    margin: auto;
+    background-color: gray;
+    border-radius: 6px ;
+    height:12px;
+    margin-top: 30px;
+}
+
+.journey{
+    background: #26d8f0;
+    width:86%;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.journey .walk {
+    top: -18px;
+    line-height: 50px;
+    height:50px;
+    width:50px;
+    border:5px solid #26d8f0;
+    border-radius: 25px;
+    background: white;
+    color: black !important;
+    position: relative;
+    left: 42px;
+}
+
+.journey .walk:after{
+    border:none;
+}
+
+.journey .percent{
+    top:-67px;
+}
+
+.journey .percent i{
+    position: relative;
+    top: 0;
+    color: black;
+    font-size: 28px;
+}
+
+.start{
+    position: relative;
+    left: -11px;
+    top: -46px;
+    display: inline;
+    font-size: 40px;
+    color: #FF4848;
+    float: left;
+}
+
+.end{
+    position: absolute;
+    display: inline;
+    font-size: 40px;
+    color: #14DFAB;
+    top:181px;
+    right:9.5%;
+    float: right;
+}
+
+
+
+#journeymap{
+        width: 100%;
+    max-width: 80%;
+    margin: auto;
+    height:100%;
+    max-height: 100%;
+    margin-top: 25px;
+}
+
+ #journeymaphead{
+        font-weight: unset;
+    width: 100%;
+    position: relative;
+    max-width: 127px;
+    margin: auto;
+    margin-top: 52px;
+    }
+
+@media screen and (max-device-width: 1240px) {
+    .name{
+        top:-43px;
+        left:0;
+    }
+
+    #currentCont{
+        margin-bottom: 60px;
+        width: 103.5%;
+    }
+
+    #overallCont{
+        margin-bottom: 60px;
+    }
+
+    .overall .percent{
+        top:-68px;
+    }
+
+    .current .percent{
+        top:-54px;
+    }
+
+    .end{
+        top:243px;
+        right:6.5%;
+    }
+
+    #journeymaphead{
+        font-weight: unset;
+    width: 100%;
+    position: relative;
+    max-width: 127px;
+    margin: auto;
+    margin-top: 52px;
+    }
+}

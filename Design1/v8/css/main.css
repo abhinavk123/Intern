@@ -1,0 +1,218 @@
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+/* CSS for navigation bar*/
+.navbar {
+    background-color: #0d47a1;
+    z-index: 4;
+}
+
+.line {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.img-th {
+    max-width: 25px;
+    max-height: 25px;
+    transition: all 0.2s linear;
+}
+
+.img-th:hover {
+    transform: scale(1.4, 1.4);
+}
+
+a.navbar-left:hover {
+    transform: scale(1.4, 1.4);
+}
+
+/*CSS for background*/
+
+#background {
+    z-index: -2;
+    width: 180%;
+    position: fixed;
+    margin-top: -750px;
+    margin-left: -200px;
+    min-height: 1000px;
+    background-color: #1976d2;
+    background: linear-gradient(145deg, #69afff, #0d47a1);
+    -webkit-transform: rotate(-15deg);
+}
+
+/*CSS for Form*/
+
+.form-size {
+    z-index: 700;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 10px rgba(0, 0, 0, 0.19);
+    max-width: 400px;
+    min-height: 200px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    border: 5px solid transparent;
+    margin-top: 220px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-image: linear-gradient(145deg, #69afff, #0d47a1);
+    border-image-slice: 1;
+    border-radius: 20px;
+
+}
+
+#formArea {
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 0.1s linear;
+}
+
+@keyframes forw {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 800px;
+    }
+    51% {
+        left: -800px;
+    }
+    100% {
+        left: 0;
+    }
+
+}
+
+@keyframes backw {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: -1000px;
+    }
+    51% {
+        left: 800px;
+    }
+    100% {
+        left: 0;
+    }
+
+}
+
+.head4 {
+    color: #1111d8;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#mainform1 {
+    margin-top: 20px;
+    width: fit-content;
+    margin: auto;
+
+}
+
+#mainform2 {
+    margin-top: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.continueBtn {
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: -70px;
+    margin-left: 25px;
+    border: 0;
+    background: linear-gradient(to right, #69afff, #0d47a1);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 10px rgba(0, 0, 0, 0.19);
+    transition: all 0.3s linear;
+    position: relative;
+    left: 15px;
+}
+
+.continueBtn:hover {
+    background: linear-gradient(to right, #0d47a1, #69afff);
+    transform: scale(1.1, 1.1);
+}
+
+.backBtn {
+    background: transparent;
+    color: #1111d8;
+    border: 0;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+/*CSS for radio button*/
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 18px;
+    transition: all 0.2s linear;
+    color: #4e4e4e;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #69afff;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:checked + label:hover,
+[type="radio"]:not(:checked) + label:hover {
+    transform: scale(1.1, 1.1);
+}
+

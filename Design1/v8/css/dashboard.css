@@ -1,0 +1,294 @@
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+/* CSS for navigation bar*/
+.navbar {
+    background-color: rgb(15, 70, 149);
+    z-index: 20;
+    margin-top: -20px;
+    position: sticky;
+}
+
+.line {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+ul {
+    position: sticky;
+}
+
+.img-th {
+    max-width: 30px;
+    max-height: 30px;
+    transition: all 0.2s linear;
+}
+
+.img-th:hover {
+    transform: scale(1.4, 1.4);
+}
+
+a.navbar-left:hover {
+    transform: scale(1.4, 1.4);
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+h5:not(.subchphead){
+    color: white;
+    text-align: left;
+    margin-left: 15px;
+}
+
+div.content {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+ol {
+    color: white;
+}
+
+.pure-toggle-label .pure-toggle-icon, .pure-toggle-label .pure-toggle-icon:before, .pure-toggle-label .pure-toggle-icon:after {
+    background-color: black;
+    width: 20px;
+    margin: 0;
+}
+
+.pure-toggle[data-toggle='left']:checked ~ .pure-toggle-label[data-toggle-label='left'] {
+    color: black;
+    border-color: black;
+}
+
+.pure-toggle-label {
+    height: 45px;
+    width: 45px;
+    color: black;
+    border-color: black;
+    top: 6px;
+    position: fixed;
+}
+
+.pure-toggle-label {
+    border-color: black;
+}
+
+.pure-drawer {
+    background-color: rgba(10, 44, 95, 0.9) !important;
+    padding-top: 85px;
+
+}
+
+
+#listnav {
+    background: white;
+    z-index: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top:10px;
+    float: left;
+    margin-left: 15px;
+    background:transparent ;
+}
+
+#listnav li{
+    float: left;
+    padding: 0;
+}
+#insideNav {
+    width: 100%;
+    padding-bottom:8px;
+}
+
+#myTabContent{
+    margin-top: 45px;
+}
+
+#totalnav {
+    height: 31px;
+}
+
+#dashWin {
+    padding: 0;
+    padding-left: 20px;
+    max-width: 83%;
+    margin: auto;
+}
+
+#mainContent {
+    position: relative;
+    max-width: 1400px;
+}
+
+.nv-item:active {
+    background: #007bff;
+    color: white;
+    height: 25px;
+    border-color: #346392;
+    box-shadow: 0 0 0 0 #49b0f5, 0 5px 30px #1e4865;
+    border: none;
+}
+
+.nv-item:hover {
+
+    background: #005dba;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+a {
+    color: black;
+}
+
+.nav-tabs .nav-link.active {
+    background: rgb(15, 70, 149);
+    color: white;
+    line-height: 30px;
+    position: relative;
+    bottom: 10px;
+    box-shadow: 0 5px 30px #1e4865;
+    border: 0;
+
+}
+
+.nav-tabs .nav-link {
+    background: #49b0f5;
+    margin-right: 1px;
+    border: 0 none transparent;
+    border-radius: 0;
+    transition: all 0.3s linear;
+}
+
+li.breadcrumb-item a:hover {
+    font-style: italic;
+}
+
+li.breadcrumb-item a:active{
+    font-size: small;
+}
+
+li.breadcrumb-item a{
+    transition: all 0.3s linear;
+}
+
+.ul li {
+    transform: skew(25deg, 0deg);
+    background: rgba(0,0,0,0.1);
+}
+
+/*CSS for Notes Template*/
+#subChpBtn {
+    color: #fff;
+    background: linear-gradient(top, #6496c8, #346392);
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    float: right;
+    margin-top: 7px;
+    margin-right: 15px;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+    box-shadow: none;
+}
+
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    border: none;
+    transition: background 0s;
+
+}
+
+#subchapter, #subheading, #subsubHeading {
+    text-align: justify;
+}
+
+div.pure-pusher{
+    background: rgba(0,0,0,0.1);
+}
+
+#contentHeadconta {
+    padding: 0;
+}
+
+.subchphead {
+    background: linear-gradient(to left, #5a74ff, #0d47a1);
+    color: white;
+    padding: 5px;
+
+}
+
+.subhead {
+    background: linear-gradient(to left, #80a7ff, #607bc6);
+    color: white;
+    padding: 5px;
+
+}
+
+.upbtndiv {
+    position: relative;
+}
+
+.upBtn {
+    height: 23px;
+    width: 23px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.upBtn:focus, .fa:focus {
+    outline: none;
+    border: none;
+
+}
+
+
+.upBtn:active {
+    outline: none;
+    border: none;
+}
+
+.fa:active {
+    transform: scale(0.8, 0.8);
+    outline: none;
+    border: none;
+}
+
+.subheadupbtn {
+    top: 2px;
+}
+
+#dashWinline {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100%;
+    margin:auto;
+}
+
+#subchapterCont, #subHeading, #subsubHeading {
+    display: block;
+}

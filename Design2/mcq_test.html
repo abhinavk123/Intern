@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MCQ Test - Chapter Wise Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+     <script src = "https://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/pie.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mcq_test.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark col-md-12 ">
+	<div class="container">
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="navbar" style="">
+			<ul class="navbar-nav  mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Logo Space
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav navbar-right">
+				<li class="nav-item active" style="margin-right: 20px">
+					<a class="nav-link" href="#"><img class="img-th" alt="Home" src="http://cdn.onlinewebfonts.com/svg/img_158445.png"></a>
+				</li>
+				<li class="nav-item active" style="margin-right: 20px">
+					<a class="nav-link" href="#"><img class="img-th" alt="User-Account" src="https://png.icons8.com/ios/1600/user-male-circle-filled.png"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<a id="hideSideBar"><span><img id="forwardbtn"   class="changeDir" src="https://png.icons8.com/wired/64/ffffff/chevron-left.png"></span></a>
+<ul class="modifylist">
+
+	<h4 class="sideBarHeading">CREDENTIAL </h4>
+	<li>
+		<a >Credit</a>
+	</li>
+	<li>
+		<a>Journey Map</a>
+	</li>
+	<li>
+		<a id="my_standing" >My Standing</a>
+	</li>
+	<li>
+		<a class="last " id="groupbtn" >Group</a>
+	</li>
+	<!--<div class="myborder"></div>-->
+	<h4 class="sideBarHeading" >MCQ CHALLENGE </h4>
+	<li>
+		<a id="chapterWiseTestBtn" class="active " >Chapterwise Test</a>
+	</li>
+	<li>
+		<a >Random Test</a>
+	</li>
+	<li>
+		<a class="last " >Improvement</a>
+	</li>
+	<!--<div class="myborder"></div>-->
+	<h4 class="sideBarHeading" >CATALOGUE </h4>
+	<li>
+		<a >Guide</a>
+	</li>
+	<li>
+		<a >Login</a>
+	</li>
+	<li>
+		<a >Contact</a>
+	</li>
+</ul>
+
+
+<div id="mainContainer" >
+    <ul class="breadcrumb">
+    <li><a href="#">MCQ CHALLENGE</a></li>
+    <li><a id="chpbtn2" style="cursor: pointer;color: white">Chapter Wise Test</a></li>
+     <li><a href="#">The French Revolution</a></li>
+</ul>
+
+<div class="mainContent">
+    <div id="questionContainer">
+        <p>1.) What is the Capital of Sri Lanka ?</p>
+    </div>
+    <div id="optionContainer">
+        <label class="questionRadioBtn"> Dambula
+            <input type="radio" id='option1' name="optchapter">
+            <span class="checkmark">A</span>
+        </label>
+        <label class="questionRadioBtn"> Columbo
+            <input type="radio" id='option2' name="optchapter">
+            <span class="checkmark">B</span>
+        </label>
+        <label class="questionRadioBtn"> Maldives
+            <input type="radio" id='option3' name="optchapter">
+            <span class="checkmark">C</span>
+        </label>
+        <label class="questionRadioBtn"> Kavaratti
+            <input type="radio" id='option4' name="optchapter">
+            <span class="checkmark">D</span>
+        </label>
+    </div>
+    <div class="mcqBtnContainer">
+        <div class="mcqBtn" id="prev">Previous</div>
+        <div class="mcqBtn" id="next">Next </div>
+        <div class="mcqBtn" id="blank"></div>
+        <div class="mcqBtn" id="quit">Quit</div>
+        <div class="mcqBtn" id="submitBtn">Submit</div>
+    </div>
+    <div class="rightBar">
+        <h5>History- Chapter 1</h5>
+        <h6> The French Revolution</h6>
+        <h7>Total Questions :<span></span>10</h7>
+        <div id="progressMeter">
+
+        </div>
+        <table id="qusTabl">
+            <tr>
+                <td class="active">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <ul id="colorMeans">
+            <li ><span id="activeCol"></span>Active</li>
+            <li id="attemptCol">Attempted</li>
+            <li id="correctCol">Correct Answer</li>
+            <li id="wrongCol">Wrong Answer</li>
+            <li id="unAttmptCol">Unattempted</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

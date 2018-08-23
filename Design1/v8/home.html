@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Signika" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="#" class="navbar-left">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </a>
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="navbar-nav  mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Logo Space
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active" style="margin-right: 20px">
+                    <a class="nav-link" href="#"><img class="img-th"
+                                                      src="http://cdn.onlinewebfonts.com/svg/img_158445.png"></a>
+                </li>
+                <li class="nav-item active" style="margin-right: 20px">
+                    <a class="nav-link" href="#"><img class="img-th"
+                                                      src="https://png.icons8.com/ios/1600/user-male-circle-filled.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="background"></div>
+
+<div class="form-size container" id="formArea">
+    <h4 id="selectSub" class="head4">Select Subject</h4>
+    <div class="container">
+        <form id="mainform1">
+            <input type="radio" id="ssc" name="mainform1" value="ssc" onclick="setTimeout(getSubject,300)">
+            <label for="ssc">Social Studies</label><br>
+            <input type="radio" id="science" name="mainform1" value="science" onclick="setTimeout(getSubject, 300)">
+            <label for="science">Science</label><br>
+            <input type="radio" id="maths" name="mainform1" value="maths" onclick="setTimeout(getSubject, 300)">
+            <label for="maths">Mathematics</label>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
